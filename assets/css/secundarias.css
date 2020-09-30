@@ -5,14 +5,14 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646
+    background-color: #464646;
     }
 
 
 .header { 
     background-color: #2c2c2c; 
     padding: 20px 15px 12px 15px; 
-    box-shadow: 0px 2px 5px 1px #0a0a0a3d; 
+    box-shadow: 0px 2px 5px 1px #0a0a0a; 
 }
 
 input { 
@@ -28,7 +28,9 @@ input {
     color: #ffffff; 
     border: none;
     padding: 6px 8px;
+    margin: 0 10px;
 }
+
 
 
 .bannerCont {
@@ -45,4 +47,41 @@ input {
 
 .buscar{
    width: 50%;
+}
+
+
+.card-lista{
+    background-color: #ffffff;
+    padding: 12px;
+    box-shadow: 0px 0px 5px 1px #0a0a0a27;
+    border-radius: 4px;
+    border-image: url(./../images/tornasol.jpg) 30 stretch;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    border-top: 5px solid;
+    border-bottom: 5px solid;
+    margin: 0;
+    width: 100%;
+    transition: 0.7s all;
+
+}
+
+.pokeNumber {
+    float: left;
+    color: #ee6b2f;
+}
+
+.hr {
+    border-top: 1px dashed #ee6b2f;
+}
+
+.infoPokemon h4 {
+    color: #e6bc2f;
+}
+
+
+.inf-api {
+    color: #616161;
+    font-size: 14px;
+    font-weight: 300;
 }

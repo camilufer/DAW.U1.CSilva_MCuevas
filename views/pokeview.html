@@ -20,24 +20,152 @@
                         <img src="../assets/images/title.png" >
                     </div>
                     <input class="buscar" type="text" placeholder="Buscar">
-                    <button type="button" class="boton">
+                    <button type="boton ml-1 ml-sm-3" class="boton">
                         <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
                             <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
                         </svg>
                     </button>
                 </div>
-                <div class="col-md-2 text-right">
+                <div class="d-none d-md-block col-md-2 text-right col-md-2 text-right">
                     <img src="../assets/images/pokeballgif.gif" routerLink="/home" height="84px">
                 </div>
             </div>   
         </div>
     </header>
-    <div class="row">
-        <div class="bannerCont">
-           <img class="banner" src="../assets/images/pokedexBanner.jpg" alt="">
+    <div class="container">
+        <div class="row">
+            <div class="bannerCont">
+               <img class="banner" src="../assets/images/pokedexBanner.jpg" alt="">
+            </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
+                    <div class="text-left pokeNumber">   
+                        <span >  
+                            N.°094
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api textCard"> Gengar </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Fantasma </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('wailord')">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°321
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Wailord </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Agua </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('shellder')">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°90
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Shellder </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Agua </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('grimer')">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°88
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Grimer </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Veneno </span> </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('combusken')">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°256
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Combusken </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Fuego  </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista bo animate__animated animate__zoomIn text-center" (click)="consultaPokemon('mewtwo')">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°150
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Mewtwo </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Psíquico  </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('arceus')">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°493
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Arceus </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Normal  </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('charizard')">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°006
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Charizard </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Dragón  </span> </h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
     </div>
+    
    
    
    
