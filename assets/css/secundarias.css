@@ -86,6 +86,27 @@ input {
     font-weight: 300;
 }
 
+
+.formulario {
+	border-radius: 0px 30px 0px 30px;
+	box-shadow: 8px 8px 8px #999;
+	margin: 0 auto;
+}
+
+.btnEnviar {
+    margin: 0 auto;
+    text-align: center;
+    width: 200px;
+}
+
+input:invalid {
+    border: 2px solid red;
+  }
+  
+  input:valid {
+    border: 2px solid lightgreen;
+  }
+
 .registro {
     width: 20px;
     height: 80px;
@@ -158,3 +179,4 @@ width: 35px;
     height: 35px;
     margin: -3px 0 0 -3px;
 }
+
