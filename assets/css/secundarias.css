@@ -88,8 +88,9 @@ input {
 
 
 .formulario {
+    padding-top: 20px;
 	border-radius: 0px 30px 0px 30px;
-	box-shadow: 8px 8px 8px #999;
+	box-shadow: 8px 8px 8px 8px #999;
 	margin: 0 auto;
 }
 
@@ -112,6 +113,7 @@ input:invalid {
     height: 80px;
     background-color:#54b564 ;
 }
+
 
 
 
@@ -153,7 +155,7 @@ z-index: 17;
 }
 
 
-a{
+.formHtml{
     color: #fff;
     display: block;
     float: left;

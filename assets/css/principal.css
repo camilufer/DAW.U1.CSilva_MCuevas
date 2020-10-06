@@ -1,0 +1,82 @@
+body { 
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-image: url(../images/pokemon-background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    }
+
+    .top20{
+        margin-top: 30px;
+        background-color: #E6BC2F;
+        border-style: dashed;
+        height: 400px;
+        overflow-y: scroll;   
+    }
+
+    .top20 > p{
+        margin-top: 10px;
+         text-align: center;
+        
+    }
+
+    .contPlay{
+        margin-top: 20px;
+    }
+    .play {
+        font-family: 'Press Start 2P', monospace;
+        color: red;
+        font-size: 20px;
+       
+    }
+
+ 
+
+      #jugar .btn-nav {
+        margin-left: 30px;
+        position: relative;
+        cursor: pointer;
+        color: #F26E55;
+        text-decoration: none;
+      }
+      
+      #jugar .btn-nav:hover {
+        color: white;
+        text-decoration: none;
+      }
+      
+      #jugar .for-hover::before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f0da ';
+        color: #4CAF50;
+        font-weight: 900;
+        text-shadow: -2px -4px black, -2px 4px black, 2px 0 black, 0 -2px black;
+        position: absolute;
+        left: -25px;
+      } 
+
+
+
+
+      .noticias{
+        margin-top: 30px;
+        padding: 30px;
+        background-color: #fff;
+        clear: both;
+        display: block;
+        width: 100%;
+        
+    }
+
+    .noticias div > h2 {
+        color:#989A98;
+    }
+    .dropdown > .btn {
+        background-color: #ee6b2f;
+    }
+
+    .dropdown >a{
+    float: right;
+    }

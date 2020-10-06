@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="./../assets/css/secundarias.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script> src = "./assets/js/app.js" </script>
@@ -19,36 +18,19 @@
     <header class="header">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-10">
-                    <div>
-                        
-                        <a href="../index.html"><img src="../assets/images/title.png"></a>
-                    </div>
-                    <input class="buscar" type="text" placeholder="Buscar">
-                    <button type="boton ml-1 ml-sm-3" class="boton">
-                        <svg width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd"
-                                d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z" />
-                            <path fill-rule="evenodd"
-                                d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="d-none d-md-block col-md-2 text-right col-md-2 text-right">
-                    <img src="../assets/images/pokeballgif.gif" routerLink="/home" height="84px">
+                <div class="text-right offset-md-10">
+                   <a href="../index.html">
+                        <img src="../assets/images/pokeballgif.gif"  height="84px">
+                   </a>
                 </div>
             </div>
         </div>
     </header>
     <div class="container">
-        <div class="row">
+        <div class="row d-none d-md-block">
             <div class="bannerCont">
-                <img class="banner" src="../assets/images/pokedexBanner.jpg" alt="">
+                <img class="banner " src="../assets/images/pokedexBanner.jpg" alt="">
             </div>
-        </div>
-        <div class="row">
-
         </div>
         <div class="row">
             <div class="formulario col-md-6 my-2">
@@ -56,7 +38,7 @@
                     <div class="form-group">
                         <label for="nombres">Nombre de Entrenador</label>
                         <input type="text" class="form-control" id="nombres" required
-                            placeholder="John Smith Smith">
+                            placeholder="Satoshi">
                     </div>
                     <div class="form-group">
                         <label for="genero">Género</label>
@@ -69,12 +51,12 @@
                     <div class="form-group">
                         <label for="mail">Email</label>
                         <input type="email" class="form-control" id="mail" required 
-                            placeholder="example@abc.cl">
+                            placeholder="satoshi@pueblopaleta.cl">
                     </div>
                     <div class="form-group">
                         <label for="fono">Teléfono</label>
                         <input type="number" class="form-control" id="fono" required
-                            placeholder="999999999">
+                            placeholder="+569-999999999">
                     </div>
                     <div class="form-group">
                         <label for="pass">Contraseña</label>
@@ -85,7 +67,7 @@
                         <input type="password" class="form-control" id="rePass" required>
                     </div>
                     <div class="btnEnviar my-1">
-                        <button type="submit" class="btn btn-primary btnEnviar" onclick="pulsar()">Enviar</button>
+                        <button type="button" class="btn btn-success btnEnviar" data-toggle="modal" data-target="#myModal">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -94,15 +76,37 @@
     </div>
 
 
+    
+      
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">¡Felicidades!</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                Datos ingresados correctamente. Lo contactaremos
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-dismiss="modal">OK</button>
+             <a href="../views/pokeview.html"> <button type="button" class="btn btn-dark">Buscar Pokemon</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-
-    <!-- Optional JavaScript -->
-    <script languaje="JavaScript">
-        function pulsar() {
-        alert("Datos ingresados correctamente. Lo contactaremos");
-        }
+      <script>  
+      $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
     </script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -113,7 +117,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
-    <script src="./assets/js/app.js">  </script>
+    <script src="../assets/js/app.js">  </script>
 
 </body>
 

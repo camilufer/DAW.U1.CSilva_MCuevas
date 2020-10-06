@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./../assets/css/secundarias.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script> src="./assets/js/app.js" </script>
-    <title>Hello, world!</title>
+    <title>Pokédex</title>
   </head>
   <body>
     <header class="header">
@@ -29,7 +29,9 @@
                     </button>
                 </div>
                 <div class="d-none d-md-block col-md-2 text-right col-md-2 text-right">
-                    <img src="../assets/images/pokeballgif.gif" routerLink="/home" height="84px">
+                    <a href="../index.html">
+                        <img src="../assets/images/pokeballgif.gif" routerLink="/home" height="84px">
+                    </a>
                 </div>
             </div>   
         </div>
@@ -39,7 +41,7 @@
         
                 <div class="user-dashboard">
                   
-                        <a href="./formulario.html">
+                        <a class="formHtml" href="./formulario.html">
                             <span class="cont-avtr">
                                 <div>
                                     <img class="avatar-icon" src="https://assets.pokemon.com/static2/_ui/img/chrome/profile-navigation/profile-nav-signup.png" alt="Sing in">
@@ -81,7 +83,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
-                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('wailord')">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
                     <div class="text-left pokeNumber">
                         <span>
                             N.°321
@@ -96,7 +98,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
-                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('shellder')">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
                     <div class="text-left pokeNumber">
                         <span>
                             N.°90
@@ -111,7 +113,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
-                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('grimer')">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
                     <div class="text-left pokeNumber">
                         <span>
                             N.°88
@@ -127,7 +129,7 @@
             </div>
 
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
-                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('combusken')">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
                     <div class="text-left pokeNumber">
                         <span>
                             N.°256
@@ -142,7 +144,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
-                <div class="card-lista bo animate__animated animate__zoomIn text-center" (click)="consultaPokemon('mewtwo')">
+                <div class="card-lista bo animate__animated animate__zoomIn text-center">
                     <div class="text-left pokeNumber">
                         <span>
                             N.°150
@@ -157,7 +159,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
-                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('arceus')">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
                     <div class="text-left pokeNumber">
                         <span>
                             N.°493
@@ -172,7 +174,7 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
-                <div class="card-lista animate__animated animate__zoomIn text-center" (click)="consultaPokemon('charizard')">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
                     <div class="text-left pokeNumber">
                         <span>
                             N.°006
@@ -183,6 +185,66 @@
                     <div class="text-left infoPokemon">
                         <h4 class="h6">Nombre: <span class="inf-api"> Charizard </span> </h4>
                         <h4 class="h6">Tipo: <span class="inf-api"> Dragón  </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°056
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Mankey </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Lucha  </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°681
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Aegislash </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Acero  </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°678
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Meowstic </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Psíquico  </span> </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 my-2">
+                <div class="card-lista animate__animated animate__zoomIn text-center">
+                    <div class="text-left pokeNumber">
+                        <span>
+                            N.°491
+                        </span>
+                    </div>
+                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png">
+                    <hr class="hr">
+                    <div class="text-left infoPokemon">
+                        <h4 class="h6">Nombre: <span class="inf-api"> Darkrai </span> </h4>
+                        <h4 class="h6">Tipo: <span class="inf-api"> Siniestro  </span> </h4>
                     </div>
                 </div>
             </div>
