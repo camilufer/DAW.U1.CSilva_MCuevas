@@ -85,19 +85,22 @@
 						Valeria
 					</li>
 				</ol>
-            </div> 
-            <div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
-				<a href="https://www.pokemon.com/es/play-pokemon/" class="btn-nav for-hover play animated infinite flash">Play</a>
-			</div>
-			<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
-				<a href="./views/pokeview.html" class="btn-nav for-hover play animated infinite flash">Pokédex</a>
 			</div> 
-			<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
-				<a href="./views/formulario.html" class="btn-nav for-hover play animated infinite flash">Sign up!</a>
+			<div id="inicio">
+				<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
+					<a href="https://www.pokemon.com/es/play-pokemon/" class="btn-nav for-hover play animated infinite flash">Play</a>
+				</div>
+				<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
+					<a href="./views/pokeview.html" class="btn-nav for-hover play">Pokédex</a>
+				</div> 
+				<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
+					<a href="./views/formulario.html" class="btn-nav for-hover play">Sign up!</a>
+				</div>
+				<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
+					<a href="#footer" id="about" class="btn-nav for-hover play">About</a>
+				</div> 
 			</div>
-			<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
-				<a href="#footer" id="about" class="btn-nav for-hover play animated infinite flash">About</a>
-            </div> 
+           
         </div>
         <div class="col-8">
             <div class="noticias container">
@@ -261,14 +264,11 @@
 	</section>
 </div>
 
+
+
+
 	  <script>
-		  $(document).ready(function() {
-  $('a[href^="#"]').click(function() {
-    var destino = $(this.hash); //this.hash lee el atributo href de este
-    $('html, body').animate({ scrollTop: destino.offset().top }, 700); //Llega a su destino con el tiempo deseado
-    return false;
-  });
-});
+
 	  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
