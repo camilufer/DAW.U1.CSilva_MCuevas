@@ -35,7 +35,7 @@ body {
 
  
 
-      #jugar .btn-nav {
+      #inicio .btn-nav {
         margin-left: 30px;
         position: relative;
         cursor: pointer;
@@ -43,12 +43,12 @@ body {
         text-decoration: none;
       }
       
-      #jugar .btn-nav:hover {
+      #inicio .btn-nav:hover {
         color: white;
         text-decoration: none;
       }
       
-      #jugar .for-hover::before {
+      #inicio .for-hover::before {
         font-family: 'Font Awesome 5 Free';
         content: '\f0da ';
         color: #4CAF50;
