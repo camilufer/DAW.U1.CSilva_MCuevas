@@ -11,81 +11,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
-    <script> src="./assets/js/app.js" </script>
+	<script> src="./assets/js/app.js" </script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
     <title>Inicio</title>
   </head>
   <body>
     
-<div class="container">
+<div class="container contBackground">
     <div class="row">
         <div class="col-4">
             <div class="top20">
-                <p><mark>Top 10 entrenadores</mark></p>
+                <p>Top 10 entrenadores</p>
 				<ol>
 					<li value="1">
-					Jotaro Joestar
+						Profesor Oak
 					</li>
 					<li value="2">
-					Jotaro Joestar
+						Rojo
 					</li>
 					<li value="3">
-					Jotaro Joestar
+						Cintia
 					</li>
 					<li value="4">
-					Jotaro Joestar
+						Veterano y Veterana
 					</li>
 					<li value="5">
-					Jotaro Joestar
+						Guayo
 					</li>
 					<li value="6">
-					Jotaro Joestar
+						Azul
 					</li>
 					<li value="7">
-					Jotaro Joestar
+						Lance 
 					</li>
 					<li value="8">
-					Jotaro Joestar
+						Vito y Leti
 					</li>
 					<li value="9">
-					Jotaro Joestar
+						Máximo
 					</li>
 					<li value="10">
-					Jotaro Joestar
+						Giovanni
 					</li>
 					<li value="11">
-					Jotaro Joestar
+						Iris
 					</li>
 					<li value="12">
-					Jotaro Joestar
+						Helio
 					</li>
 					<li value="13">
-					Jotaro Joestar
+						Valente
 					</li>
 					<li value="14">
-					Jotaro Joestar
+						N y Ghechis
 					</li>
 					<li value="15">
-					Jotaro Joestar
+						Serena
 					</li>
 					<li value="16">
-					Jotaro Joestar
+						Karen
 					</li>
 					<li value="17">
-					Jotaro Joestar
+						Narciso
 					</li>
 					<li value="18">
-					Jotaro Joestar
+						Xero
 					</li>
 					<li value="19">
-					Jotaro Joestar
+						Yasmina
 					</li>
 					<li value="20">
-					Jotaro Joestar
+						Valeria
 					</li>
 				</ol>
             </div> 
             <div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
-                <a href="https://www.pokemon.com/es/play-pokemon/" class="btn-nav for-hover play animated infinite flash">Play</a>
+				<a href="https://www.pokemon.com/es/play-pokemon/" class="btn-nav for-hover play animated infinite flash">Play</a>
+			</div>
+			<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
+				<a href="./views/pokeview.html" class="btn-nav for-hover play animated infinite flash">Pokédex</a>
+			</div> 
+			<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
+				<a href="./views/formulario.html" class="btn-nav for-hover play animated infinite flash">Sign up!</a>
+			</div>
+			<div  id="jugar" class="contPlay animate__animated animate__bounceInLeft">
+				<a href="#footer" id="about" class="btn-nav for-hover play animated infinite flash">About</a>
             </div> 
         </div>
         <div class="col-8">
@@ -98,35 +109,174 @@
 						<a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						 Todas las noticias
 						</a>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						  <a class="dropdown-item" href="#">Noticias de Videojuegos</a>
-						  <a class="dropdown-item" href="#">Noticias de TV Pokémon</a>
-						  <a class="dropdown-item" href="#">Noticias de Eventos</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+							<a class="dropdown-item" href="#">Noticias de Videojuegos</a>
+							<a class="dropdown-item" href="#">Noticias de TV Pokémon</a>
+							<a class="dropdown-item" href="#">Noticias de Eventos</a>
+						</div>
 					</div>
 				</div>
-                
+				<div class="row">
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row no-gutters">
+						  	<div class="col-md-4">
+								<img src="./assets/images/eyes-of-galar-11.jpg" class="card-img" alt="...">
+						  	</div>
+						  	<div class="col-md-8">
+								<div class="card-body"> 
+							  		<h5 class="card-title">Supera el cuestionario visual de los Pokémon de Galar</h5>
+							  		<p class="card-text">!Prepárate para un <mark>test de visión</mark> de lo más especial! ¿Eres capaz de reconocer a éstos Pokémon por sus ojos?</p>
+							  		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row no-gutters">
+						  	<div class="col-md-4">
+								<img src="./assets/images/pikachu-03-11.jpg" class="card-img" alt="...">
+						  	</div>
+						  	<div class="col-md-8">
+								<div class="card-body">
+							  		<h5 class="card-title">¡Consigue al Pikachu de Ash con sus gorras para Pokémon Espada y Pokémon Escudo!</h5>
+							  		<p class="card-text">Introduce estas contraseñas en tu juego para conseguir las diferentes formas de <strong>Pikachu</strong> luciendo las míticas gorras de Ash como regalo misterioso.</p>
+							  		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row no-gutters">
+						  	<div class="col-md-4">
+								<img src="./assets/images/season03-live-11-es.png" class="card-img" alt="...">
+						  	</div>
+						  	<div class="col-md-8">
+								<div class="card-body">
+							  		<h5 class="card-title">Los episodios de Los Viajes Johto se añaden a TV Pokémon</h5>
+							  		<p class="card-text">Ash y sus amigos viajan a través de la región de Johto, en la que hacen nuevos amigos y dicen adiós a algunos queridos compañeros Pokémon.</p>
+							  		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row no-gutters">
+						  	<div class="col-md-4">
+								<img src="./assets/images/champion-stadium-11.jpg" class="card-img" alt="...">
+						  	</div>
+						  	<div class="col-md-8">
+								<div class="card-body">
+							  		<h5 class="card-title">Alcanza tu máximo potencial en los combates de Campeones</h5>
+							  		<p class="card-text">Sigue los consejos para derrotar al Alto Mando y al Campeón o Campeona y podrás conseguir Espíritus Campeones y subir a 6EXP.</p>
+							  		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+						  	</div>
+						</div>
+					</div>
+					<div class="card mb-3" style="max-width: 540px;">
+						<div class="row no-gutters">
+						  	<div class="col-md-4">
+								<img src="./assets/images/battle-of-legends-11-es.jpg" class="card-img" alt="...">
+						  	</div>
+						  	<div class="col-md-8">
+								<div class="card-body">
+							  		<h5 class="card-title">Compite en el Torneo en Línea Choque de Leyendas</h5>
+							  		<p class="card-text">Demuestra tus habilidades contra jugadores de todo el mundo en Pokémon Espada y Pokémon Escudo para conseguir PB.</p>
+							  		<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+						  	</div>
+						</div>
+					</div>
+				</div>  
             </div>
         </div>
-    </div>
+	</div>
+	<div class="contBestPlayers row">
+		<span class="col-2">Mejores Jugadores
+			<img class="flag" src="./assets/images/pngegg.png" alt="">
+		</span>
+		<table class="col-10">	
+			<tr>
+			  <th>Nombre</th>
+			  <th>Puesto</th>
+			  <th>N° Victorias</th>
+			  <th>N° Derrotas</th>
+			  <th>País</th>
+			</tr>
+			<tr>
+			  <td>Maria Anders</td>
+			  <td >1</td>
+			  <td >76</td>
+			  <td >17</td>
+			  <td>Mexico</td>
+			</tr>
+			<tr>
+			  <td>Francisco Chang</td>
+			  <td>2</td>
+			  <td>68</td>
+			  <td>18</td>
+			  <td>Korea</td>
+			</tr>
+			<tr>
+			  <td>Roland Mendel</td>
+			  <td>3</td>
+			  <td>59</td>
+			  <td>20</td>
+			  <td>Austria</td>
+			</tr>
+			<tr>
+			  <td>Helen Bennett</td>
+			  <td>4</td>
+			  <td>48</td>
+			  <td>19</td>
+			  <td>UK</td>
+			</tr>
+		</table>
+	</div>
 </div>
-        
-      
-<ul>
-            <li>
-              <a href="./views/pokeview.html">pokeview</a>
-            </li>
-            <li>
-              <a href="./views/formulario.html">Inscríbete como entrenador!</a>
-            </li>
-          </ul>
-      </div>
-   
+<div class="container">
+	<!--FOOTER-->
+	<section id="footer">
+		<div class="opacityColor container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a class="txt-ftr" href="https://www.nationaltransaction.com/">Developed by Martín Cuevas y Camila Silva</a></u> [Inacap, Santiago Centro, CH]</p>
+					<p class="h6">© All right Reversed.<a class="txt-ftr ml-2" href="https://www.sunlimetech.com" target="_blank">Pokédex</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+</div>
+
+	  <script>
+		  $(document).ready(function() {
+  $('a[href^="#"]').click(function() {
+    var destino = $(this.hash); //this.hash lee el atributo href de este
+    $('html, body').animate({ scrollTop: destino.offset().top }, 700); //Llega a su destino con el tiempo deseado
+    return false;
+  });
+});
+	  </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="./assets/js/app.js">  </script>
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	
 </body>
 </html>

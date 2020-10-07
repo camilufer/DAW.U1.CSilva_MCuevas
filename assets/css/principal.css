@@ -7,10 +7,11 @@ body {
     background-size: cover;
     background-color: #464646;
     }
+    
 
     .top20{
         margin-top: 30px;
-        background-color: #E6BC2F;
+        background-color: #4DAD5B;
         border-style: dashed;
         height: 400px;
         overflow-y: scroll;   
@@ -79,4 +80,47 @@ body {
 
     .dropdown >a{
     float: right;
+    }
+
+    .card {
+        margin: 0 auto;
+        cursor: pointer;
+    }
+
+    .card:hover {
+    background-color: #D0D0D0;
+    }
+
+    .card:first-child {
+        margin-top: 30px;
+    }
+
+   .opacityColor {
+       margin-top: 30px;
+        background-color: rgba(0,0,0,0.3)
+    }
+
+    .txt-ftr{
+        color: black;
+    }
+
+
+    .card-text > mark {
+        color: red;
+    }
+
+    .contBestPlayers {
+        padding: 15px;
+        margin-top: 30px;
+        background-color: #EE6B2F;
+        
+    }
+    .contBestPlayers > span {
+        text-align: center;
+    }
+ 
+
+    .flag {
+        margin-top: 20px;
+        width: 60px;
     }
