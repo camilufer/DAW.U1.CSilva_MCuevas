@@ -132,3 +132,18 @@ body {
         border-style: double;
         border-color: #47B1DC;
     }
+
+    .navbar {
+        background-color: #fff;
+    }
+
+    .nav-link {
+        color: #000;
+    }
+
+    #menuNavegacion>a:first-child{
+        color:red;
+     }
+
+
+    
