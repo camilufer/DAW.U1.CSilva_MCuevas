@@ -124,3 +124,11 @@ body {
         margin-top: 20px;
         width: 60px;
     }
+
+    .parrafo {
+        margin-top: 30px;
+        padding: 20px;;
+        text-align: justify;
+        border-style: double;
+        border-color: #47B1DC;
+    }
